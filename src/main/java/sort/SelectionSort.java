@@ -4,7 +4,6 @@ package sort;
  * created by lanxinghua@2dfire.com on 2020/5/18
  * 选择排序
  * 最坏时间复杂度：O(n^2)
- * 最好时机复杂度：O(n)
  */
 public class SelectionSort extends BaseSort{
     public static void main(String[] args) {

@@ -5,7 +5,6 @@ package sort;
  * created by lanxinghua@2dfire.com on 2020/5/18
  * 冒泡排序
  * 最坏时间复杂度：O(n^2)
- * 最好时间复杂度：O(n)
  */
 public class BubbleSort extends BaseSort{
     public static void main(String[] args) {
