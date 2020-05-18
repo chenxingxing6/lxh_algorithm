@@ -1,4 +1,4 @@
-package com.demo.month4;
+package study;
 
 import java.util.Objects;
 

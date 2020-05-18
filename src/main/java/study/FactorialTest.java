@@ -1,4 +1,4 @@
-package com.demo.month4;
+package study;
 
 /**
  * created by lanxinghua@2dfire.com on 2020/4/28

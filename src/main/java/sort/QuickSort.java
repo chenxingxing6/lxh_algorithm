@@ -22,39 +22,25 @@ public class QuickSort extends BaseSort{
         int start = low;
         int end = high;
         int key = arr[low];
-
         while (start < end){
             // 向后遍历
-            while (end > start && arr[end] >= key){
-                end--;
-            }
-
+            while (end > start && arr[end] >= key){ end--; }
             if (arr[end] <= key){
                 int temp = arr[end];
                 arr[end] = arr[start];
                 arr[start] = temp;
             }
-
             // 向前遍历
-            while (end > start && arr[start] <= key){
-                start++;
-            }
-
+            while (end > start && arr[start] <= key){ start++; }
             if (arr[start] >= key){
                 int temp = arr[start];
                 arr[start] = arr[end];
                 arr[end] = temp;
             }
-
             // 左边部分继续递归
-            if (start > low){
-                quickSort(arr, low, start-1);
-            }
-
+            if (start > low){  quickSort(arr, low, start-1); }
             // 右边部分继续递归
-            if (high > end){
-                quickSort(arr, end + 1, high);
-            }
+            if (high > end){  quickSort(arr, end + 1, high); }
         }
 
         return arr;

@@ -16,6 +16,8 @@ public class BinarySearch {
         high = arr.length -1;
         while (low <= high){
             mid = (low + high) / 2;
+
+            // 方法出口
             if (arr[mid] == a){
                 return mid;
             }
@@ -23,7 +25,6 @@ public class BinarySearch {
             else if (arr[mid] > a){
                 high = mid -1;
             }
-
             // 向右查找
             else if (arr[mid] < a){
                 low = mid + 1;
