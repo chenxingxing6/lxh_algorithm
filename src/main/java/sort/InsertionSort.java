@@ -6,6 +6,8 @@ package sort;
  * 最坏时间复杂度 O(n^2)
  * 最优时间复杂度 O(n)
  *
+ * 稳定排序算法
+ *
  */
 public class InsertionSort extends BaseSort{
     public static void main(String[] args) {

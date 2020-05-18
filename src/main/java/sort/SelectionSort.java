@@ -4,6 +4,8 @@ package sort;
  * created by lanxinghua@2dfire.com on 2020/5/18
  * 选择排序
  * 最坏时间复杂度：O(n^2)
+ *
+ * 不稳定排序算法（5 8 5 2），5就被破坏掉了
  */
 public class SelectionSort extends BaseSort{
     public static void main(String[] args) {
