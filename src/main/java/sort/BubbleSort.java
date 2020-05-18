@@ -7,9 +7,8 @@ package sort;
  * 最坏时间复杂度：O(n^2)
  * 最好时间复杂度：O(n)
  */
-public class BubbleSort {
+public class BubbleSort extends BaseSort{
     public static void main(String[] args) {
-        int arr[] = {20, 10, 30, 15};
         bubbleSort(arr);
     }
 
@@ -30,14 +29,5 @@ public class BubbleSort {
         }
 
         printArray("排序后", arr);
-    }
-
-
-    private static void printArray(String msg, int arr[]) {
-        System.out.print(msg + ":");
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] +",");
-        }
-        System.out.println();
     }
 }
